@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.subscribe-section {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 15px;
+    background-image: url('bali.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 140px;
+}
+
+.subscribe-section .text-content {
+    max-width: 50%;
+}
+
+.subscribe-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.subscribe-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.subscribe-section .form-content {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-section input[type="email"] {
+    padding: 15px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+    width: 250px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.subscribe-section button {
+    padding: 15px 30px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+.subscribe-section button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .subscribe-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .subscribe-section .text-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .subscribe-section .form-content {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .subscribe-section input[type="email"], 
+    .subscribe-section button {
+        width: auto;
+        border-radius: 50px;
+        margin-bottom: 10px;
+    }
+}

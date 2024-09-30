@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.footer {
+    background-color: #111;
+    color: #000000;
+    padding: 40px 0;
+    background-color:  rgb(255, 175,70);
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 150px; /* Adjust for the main logo */
+    margin-right: 15px; /* Space between logo and icons */
+    margin-top: -50px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons img {
+    width: 30px; /* Set the size for social media icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Space between icons */
+    transition: transform 0.3s; /* Smooth hover effect */
+    margin-top: 130px;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-column {
+    width: 20%;
+}
+
+.footer-column h3 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: #000000;
+}
+
+.footer-bottom {
+    background-color: #000;
+    padding: 20px;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-app-promo {
+    text-align: left;
+}
+
+.footer-app-promo p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-app-promo ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.footer-app-promo ul li {
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .container, .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-app-promo, .footer-right {
+        text-align: center;
+        width: 100%;
+    }
+}

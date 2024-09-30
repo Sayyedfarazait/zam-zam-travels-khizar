@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(255, 175, 70);
+    margin-top: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+    font-size: 18px;
+    margin-left: 60px;
+    margin-top: -33px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: color 0.3s, font-size 0.3s;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+}
+
+.backimg {
+    width: 100%;
+    height: auto; 
+    max-height: 35rem;
+}
+
+.write {
+    text-align: center;
+    margin-top: -190px;
+    font-size: 1.5rem; 
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 1.2rem; 
+}
+
+div img {
+    height: 65px;
+    width: 100px;
+    margin-right: 20px; 
+}
+
+
+@media (max-width: 768px) {
+    nav ul li {
+        margin: 0 10px;
+        font-size: 12px; 
+    }
+    
+    .write {
+        margin-top: -150px;
+        font-size: 1.2rem; 
+    }
+    
+    h2 {
+        font-size: 1rem; 
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+nav ul div img{
+    height: 40px;
+    width: 50px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:  rgb(255, 175,70);
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color:  rgb(255, 175,70);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    margin-top: 50px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+.card-content .price {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.card-content .book-btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card-content .book-btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
